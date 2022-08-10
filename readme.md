@@ -38,6 +38,8 @@ odoo
 
 ## API
 
+Fork of intocare/odoo-connect with added search_count, unlink (remove), write(update) methods
+
 ### Odoo(options)
 
 #### options
@@ -140,7 +142,78 @@ Type: `string[]`
 
 Fields that should be selected.
 
+### client.searchCount(model, args, [params])
+
+#### model
+
+Type: `string`
+
+Model to perform the action on.
+
+#### args
+
+Type: `Array`
+
+List of parameters.
+
+#### params
+
+##### offset
+
+Type: `number`<br>
+Default: `0`
+
+Result offset.
+
+##### limit
+
+Type: `number`<br>
+Default: `5`
+
+Maximum number of results.
+
+##### order
+
+Type: `string`<br>
+Default: `id`
+
+Name of the fields used to sort the results.
+
+##### select
+
+Type: `string[]`
+
+Fields that should be selected.
+
 ### client.create(model, args)
+
+#### model
+
+Type: `string`
+
+Model to perform the action on.
+
+#### args
+
+Type: `Array`
+
+List of parameters.
+
+### client.update(model, args)
+
+#### model
+
+Type: `string`
+
+Model to perform the action on.
+
+#### args
+
+Type: `Array`
+
+List of parameters.
+
+### client.remove(model, args)
 
 #### model
 
