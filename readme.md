@@ -6,14 +6,14 @@
 ## Install
 
 ```
-$ npm install --save odoo-connect
+$ npm install --save odoo-connect-r
 ```
 
 
 ## Usage
 
 ```js
-const Odoo = require('odoo-connect');
+const Odoo = require('odoo-connect-r');
 
 const odoo = new Odoo({
 	host: 'foobar.com',
